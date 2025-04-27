@@ -1,5 +1,10 @@
 {
+  "name": "invoices-app",
   "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "author": "Daniel González Briseño",
+  "keywords": ["nextjs", "tailwindcss", "typescript", "react"],
   "scripts": {
     "build": "next build",
     "dev": "next dev --turbopack",
