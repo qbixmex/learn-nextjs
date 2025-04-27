@@ -1,4 +1,4 @@
-export const CustomersPage = () => {
+const CustomersPage = () => {
   return (
     <h1 className="text-3xl text-blue-800 font-semibold">
       Customers Page
