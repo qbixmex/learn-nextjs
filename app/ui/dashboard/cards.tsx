@@ -5,6 +5,7 @@ import {
   InboxIcon,
 } from '@heroicons/react/24/outline';
 import { lusitana } from '@/app/ui/fonts';
+import { FC } from 'react';
 
 const iconMap = {
   collected: BanknotesIcon,
@@ -30,15 +31,13 @@ export default async function CardWrapper() {
   );
 }
 
-export function Card({
-  title,
-  value,
-  type,
-}: {
+type CardProps = {
   title: string;
   value: number | string;
   type: 'invoices' | 'customers' | 'pending' | 'collected';
-}) {
+};
+
+export const Card: FC<CardProps> = ({ title, value, type }) => {
   const Icon = iconMap[type];
 
   return (
@@ -55,4 +54,4 @@ export function Card({
       </p>
     </div>
   );
-}
+};
