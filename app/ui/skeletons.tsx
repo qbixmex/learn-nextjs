@@ -5,7 +5,7 @@ const shimmer =
 export function CardSkeleton() {
   return (
     <div
-      className={`${shimmer} relative overflow-hidden rounded-xl bg-gray-100 p-2 shadow-sm`}
+      className={`${shimmer} relative overflow-hidden rounded-xl bg-gray-100 p-2 shadow-sm animate-pulse`}
     >
       <div className="flex p-4">
         <div className="h-5 w-5 rounded-md bg-gray-200" />
@@ -31,7 +31,7 @@ export function CardsSkeleton() {
 
 export function RevenueChartSkeleton() {
   return (
-    <div className={`${shimmer} relative w-full overflow-hidden md:col-span-4`}>
+    <div className={`${shimmer} relative w-full overflow-hidden md:col-span-4 animate-pulse`}>
       <div className="mb-4 h-8 w-36 rounded-md bg-gray-100" />
       <div className="rounded-xl bg-gray-100 p-4">
         <div className="sm:grid-cols-13 mt-0 grid h-[410px] grid-cols-12 items-end gap-2 rounded-md bg-white p-4 md:gap-4" />
@@ -46,7 +46,7 @@ export function RevenueChartSkeleton() {
 
 export function InvoiceSkeleton() {
   return (
-    <div className="flex flex-row items-center justify-between border-b border-gray-100 py-4">
+    <div className="flex flex-row items-center justify-between border-b border-gray-100 py-4 animate-pulse">
       <div className="flex items-center">
         <div className="mr-2 h-8 w-8 rounded-full bg-gray-200" />
         <div className="min-w-0">
@@ -62,7 +62,7 @@ export function InvoiceSkeleton() {
 export function LatestInvoicesSkeleton() {
   return (
     <div
-      className={`${shimmer} relative flex w-full flex-col overflow-hidden md:col-span-4`}
+      className={`${shimmer} relative flex w-full flex-col overflow-hidden md:col-span-4 animate-pulse`}
     >
       <div className="mb-4 h-8 w-36 rounded-md bg-gray-100" />
       <div className="flex grow flex-col justify-between rounded-xl bg-gray-100 p-4">
@@ -86,7 +86,7 @@ export default function DashboardSkeleton() {
   return (
     <>
       <div
-        className={`${shimmer} relative mb-4 h-8 w-36 overflow-hidden rounded-md bg-gray-100`}
+        className={`${shimmer} relative mb-4 h-8 w-36 overflow-hidden rounded-md bg-gray-100 animate-pulse`}
       />
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         <CardSkeleton />
@@ -104,7 +104,7 @@ export default function DashboardSkeleton() {
 
 export function TableRowSkeleton() {
   return (
-    <tr className="w-full border-b border-gray-100 last-of-type:border-none [&:first-child>td:first-child]:rounded-tl-lg [&:first-child>td:last-child]:rounded-tr-lg [&:last-child>td:first-child]:rounded-bl-lg [&:last-child>td:last-child]:rounded-br-lg">
+    <tr className="w-full border-b border-gray-100 last-of-type:border-none [&:first-child>td:first-child]:rounded-tl-lg [&:first-child>td:last-child]:rounded-tr-lg [&:last-child>td:first-child]:rounded-bl-lg [&:last-child>td:last-child]:rounded-br-lg animate-pulse">
       {/* Customer Name and Image */}
       <td className="relative overflow-hidden whitespace-nowrap py-3 pl-6 pr-3">
         <div className="flex items-center gap-3">
@@ -142,7 +142,7 @@ export function TableRowSkeleton() {
 export function InvoicesMobileSkeleton() {
   return (
     <div className="mb-2 w-full rounded-md bg-white p-4">
-      <div className="flex items-center justify-between border-b border-gray-100 pb-8">
+      <div className="flex items-center justify-between border-b border-gray-100 pb-8 animate-pulse">
         <div className="flex items-center">
           <div className="mr-2 h-8 w-8 rounded-full bg-gray-100"></div>
           <div className="h-6 w-16 rounded bg-gray-100"></div>
@@ -165,7 +165,7 @@ export function InvoicesMobileSkeleton() {
 
 export function InvoicesTableSkeleton() {
   return (
-    <div className="mt-6 flow-root">
+    <div className="mt-6 flow-root animate-pulse">
       <div className="inline-block min-w-full align-middle">
         <div className="rounded-lg bg-gray-50 p-2 md:pt-0">
           <div className="md:hidden">
