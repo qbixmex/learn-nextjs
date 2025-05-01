@@ -3,6 +3,8 @@ import SideNav from '@/app/ui/dashboard/sidenav';
 
 type Props = Readonly<{ children: React.ReactNode }>;
 
+export const experimental_ppr = true;
+
 const DashboardLayout:FC<Props> = ({children}) => {
   return (
     <div className="flex h-screen flex-col md:flex-row md:overflow-hidden">
